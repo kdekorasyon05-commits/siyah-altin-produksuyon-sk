@@ -1703,46 +1703,7 @@ style="display:inline-block;margin:5px 0 10px 0;background:#d4af37;color:#000;pa
         <span>Duygudan Satırlara · Şiirler</span>
     </h3>
 
-    <div class="track-list" id="siir_sozlu">
-
-        <div class="poem-item" onclick="togglePoem('sessizce_gittin')">
-            <span>📖</span> SESSİZCE GİTTİN
-        </div>
-
-        <div class="poem-content" id="sessizce_gittin">
-            <p>Bir gece...<br>
-            sessizce gittin.</p>
-
-            <p>Ardında,<br>
-            suskun bir ev kaldı.</p>
-
-            <p>Duvarlarda hâlâ sesin var.</p>
-
-            <p>Bazen...<br>
-            sanki birazdan kapı açılacak<br>
-            ve sen geleceksin gibi.</p>
-
-            <p>Ama gelmiyorsun.</p>
-
-            <p>Ben de her gece<br>
-            aynı yerde oturup<br>
-            seni düşünmeye devam ediyorum.</p>
-
-            <p>İnsan...<br>
-            birini kaybedince<br>
-            sadece onu kaybetmiyor galiba.</p>
-
-            <p>Kendisinden de<br>
-            bir parça bırakıyor geride.</p>
-
-            <p>Ben senden sonra<br>
-            bunu öğrendim.</p>
-
-            <p>Bazı insanlar gider...</p>
-
-            <p>Ama gitmeleri,<br>
-            onları kalbimizden götürmeye yetmiyor.</p>
-        </div>
+  
 
     </div>
 </div>
@@ -1767,7 +1728,42 @@ style="display:inline-block;margin:5px 0 10px 0;background:#d4af37;color:#000;pa
 .poem-content p {
     margin: 0 0 18px;
 }
-</style>
+</style>.poem-content {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 10px 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.poem-content p {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 16px;
+    padding: 0;
+    line-height: 1.8;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.poem-item {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.track-list {
+    max-width: 100%;
+    box-sizing: border-box;
+}
 
 <script>
 function togglePoem(id) {
